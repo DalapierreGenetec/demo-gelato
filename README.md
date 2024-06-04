@@ -101,6 +101,14 @@ if (container) {
 
 ```
 
+### Executing npm run build:release
+
+#### Gelato-react
+![alt text](assets/cmd-gelato.png)
+
+#### Comparison project
+![alt text](assets/cmd-comp.png)
+
 ### The results
 
 Everything will be compared using the production build command
@@ -108,7 +116,7 @@ Everything will be compared using the production build command
 
 | Data                | Gelato-React | Comparison |
 | ---------           | :----------: | ---------: |
-| Build time          | 7 412ms      | 2 960ms    |
+| Build time          | 17 860ms     | 8 289ms    |
 | Dist size           | 1.82 MB      | 137 KB     |
 | Main bundle.js size | 285 KB       | 136 KB     |
 | Warnings            | 2            |  0         |
@@ -116,7 +124,7 @@ Everything will be compared using the production build command
 
 As we can see there's a significant regression when using gelato:
 
-**Build time**: <span style="color: #FF474C">+4.5 seconds</span> (4 452ms diff) </br>
+**Build time**: <span style="color: #FF474C">+215%</span> (9 571ms diff) </br>
 **Dist size**: <span style="color: #FF474C">+1328%</span> (1683 KB diff) </br>
 **Main bundle.js size**: <span style="color: #FF474C">+208%</span> (149 KB diff) </br>
 **Warnings**: <span style="color: #FFA756">2 warnings</span> (2 diff) </br>
