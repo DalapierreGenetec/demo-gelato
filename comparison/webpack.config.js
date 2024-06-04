@@ -20,10 +20,6 @@ var config = {
             {
                 test: /\.css/i,
                 use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\.resx$/,
-                use: path.resolve(__dirname, 'resx-loader.js')
             }
         ]
     },
